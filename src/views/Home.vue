@@ -1,18 +1,19 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <div>
+    <Mislistas v-bind:titulo="$t('app.titulo')"/>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+import Mislistas from '@/components/Mislistas.vue'; // @ is an alias to /src
 
 @Component({
-  components: {
-    HelloWorld,
-  },
+   components: {
+      Mislistas,
+   },
 })
+
 export default class Home extends Vue {}
 </script>
+
